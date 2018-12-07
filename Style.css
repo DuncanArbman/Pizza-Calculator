@@ -27,6 +27,7 @@ article{
     width: 30%;
     position: relative;
     left: 35%;
+    margin-top: 15px;
 }
 .a1{
     color: black;
@@ -36,7 +37,8 @@ article{
 
 h1{
     font-style: italic;
-
+    position: relative;
+    left: 41%;
 }
 
 h2{
@@ -53,4 +55,9 @@ li{
     position: relative;
     left: 629px;
     padding: 5px;
+}
+img{
+    width: 150px;
+    height: 100px;
+
 }
