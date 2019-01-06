@@ -2,28 +2,51 @@
 <html lang="NL">
 <head>
     <meta charset="UTF-8">
-    <title>Pizza caluculator</title>
+    <title>Pizza calculator</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="pizza.js">
+        var data = [
+            {
+                "id": "1",
+                "msg": "hi",
+                "tid": "2013-05-05 23:35",
+                "fromWho": "hello1@email.se"
+            },
+            {
+                "id": "2",
+                "msg": "there",
+                "tid": "2013-05-05 23:45",
+                "fromWho": "hello2@email.se"
+            }
 
+        ]
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                alert(data[key].id);
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Pizza Calculator</h1>
     </header>
-    <nav>
-        <li><a class="a1" href="#"> Home</a></li>
-        <li><a class="a1" href="#">Pizza's</a></li>
-        <li><a class="a1" href="#">Toppings</a></li>
+    <nav class="pizzaNav">
+        <li><a  href="#"> Home</a></li>
+        <li><a  href="#">Pizza's</a></li>
+        <li><a  href="#">Toppings</a></li>
+
     </nav>
 
-<article>
-    <h2>Pizza Salami €7,50 </h2>
-    <img src="Afb/pizza.jpg">
-    <h2>Pizza Margherita €6 </h2>
-    <img src="Afb/margherita.jpg">
-    <h2>Pizza Tonijn €6 </h2>
-    <img src="Afb/tonijn.jpg">
-</article>
+<article><onclick ="showpizza">
+    <a href="Home.html"> <h2>Pizza Salami</h2>
+    <img src="Afb/pizza.jpg"></a>
+    <a href="Home.html"><h2>Pizza Margherita </h2>
+    <img src="Afb/margherita.jpg"></a>
+    <a href="Home.html"><h2>Pizza Tonijn  </h2>
+    <img src="Afb/tonijn.jpg"></a>
+    </onclick></article>
+
 
 </body>
 </html>
